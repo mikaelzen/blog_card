@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  }
+  
+  /* Add a background color */
+  /* Si quiero cambiar color de textos, o modificar paddings especificos, quitarlos de acá*/
+  body {
+  
+    font-size: larger;
+    color:rgb(125, 230, 230);
+    padding: 0px;
+    margin: 0px;
+    background-image: url(./assets/back1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+
+  h1,h2,h3,h4, h5 {
+    font-family:'Poppins';
+  }
+
+  article,p,a {
+    font-family: sans-serif;
+
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px; 
+    text-align: center;
+    background-color:rgba(39, 29, 99, 0.747);
+    background-size: cover;
+  }
+
+  /* Con esto volvi a crear padding del resto, excepto header y footer*/
+  .padding{
+    padding: 20px;
+  }
+
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+
+  /* Probando a editar imagen directamente*/
+  img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   border-radius: 1%;
+  }
+
+  a:link{
+    color:rgb(118, 189, 189);
+  }
+
+  a:visited{
+    color: pink;
+  }
+
+  a:hover{
+    color:aqua;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgba(39, 29, 99, 0.747);
+    padding: 10px 40px 30px 40px;
+    margin-top: 20px;
+    border-radius:1vw;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 10px 40px 40px 40px;
+    text-align: center;
+    background-color: rgba(39, 29, 99, 0.747);
+    margin-top: 180px;
+  }
+
+  .logo {
+    padding-top: 25px;
+    width:fit-content;
+    border-width:0;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Centrar div de manera horizontal y poner imagen de fondo dentro de div
+  .center {
+    margin: auto;
+    width: 80%;
+    height:40vw;
+    border: 3px solid rgb(61, 24, 122);
+    border-radius: 2%;
+    padding: 10px;
+  }  */
+
+  .fakeimg {
+   background-image: url(./assets/doge.jpg);
+   background-position: center;
+   background-size:cover;
+  }  
