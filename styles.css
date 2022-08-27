@@ -6,7 +6,7 @@
   /* Si quiero cambiar color de textos, o modificar paddings especificos, quitarlos de acá*/
   body {
   
-    font-size: larger;
+    font-size:large;
     color:rgb(125, 230, 230);
     padding: 0px;
     margin: 0px;
@@ -22,12 +22,13 @@
 
   article,p,a {
     font-family: sans-serif;
+    font-size: medium;
 
   }
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
+    padding: 10px;
     font-size: 40px; 
     text-align: center;
     background-color:rgba(39, 29, 99, 0.747);
@@ -38,29 +39,38 @@
   .padding{
     padding: 20px;
   }
+  
+  /* Debo crear filas que se vuelvan columnas  */
+  .Container{
+    width:96%;
+    margin:0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
 
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 75%;
+  /* Add a card effect for articles */
+  .card {
+    width:22em;
+    height:92vh;
+    margin-top: 50px;
+    border: 1px solid lightskyblue;
+    box-shadow: 0 0 12px rgba(0,0,0, .2);
+    overflow: hidden;
+
+    background-color: rgba(39, 29, 99, 0.747);
+    padding: 0px 40px 30px 40px;
+    border-radius:5px;
   }
-  
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  
 
   /* Probando a editar imagen directamente*/
   img{
    display: block;
    margin-left: auto;
    margin-right: auto;
-   width: 50%;
+   width: 100%;
    border-radius: 1%;
   }
 
@@ -75,28 +85,13 @@
   a:hover{
     color:aqua;
   }
-
-  /* Add a card effect for articles */
-  .card {
-    background-color: rgba(39, 29, 99, 0.747);
-    padding: 10px 40px 30px 40px;
-    margin-top: 20px;
-    border-radius:1vw;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   
   /* Footer */
   .footer {
     padding: 10px 40px 40px 40px;
     text-align: center;
     background-color: rgba(39, 29, 99, 0.747);
-    margin-top: 180px;
+    margin-top: 100px;
   }
 
   .logo {
