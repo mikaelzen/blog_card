@@ -1,1 +1,1 @@
-# blog_card
+Blog with cards format
