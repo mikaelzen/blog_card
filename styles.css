@@ -2,8 +2,7 @@
   box-sizing: border-box;
   }
   
-  /* Add a background color */
-  /* Si quiero cambiar color de textos, o modificar paddings especificos, quitarlos de acá*/
+  /* Add a background image */
   body {
   
     font-size:large;
@@ -16,64 +15,81 @@
     background-attachment: fixed;
   }
 
-  h1,h2,h3,h4, h5 {
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px; 
+      text-align: center;
+      background-color:rgba(39, 29, 99, 0.747);
+      background-size: cover;
+    }
+
+  h2,h3,h4, h5 {
     font-family:'Poppins';
+    padding: 0px 20px 0px 20px;
+    margin:17px 0px 17px 0px;
   }
 
   article,p,a {
     font-family: sans-serif;
     font-size: medium;
+    padding: 0px 20px 0px 20px;
+    margin: 17px 0px 0px 0px;
 
   }
   
-  /* Header/Blog Title */
-  .header {
-    padding: 10px;
-    font-size: 40px; 
-    text-align: center;
-    background-color:rgba(39, 29, 99, 0.747);
-    background-size: cover;
-  }
+
 
   /* Con esto volvi a crear padding del resto, excepto header y footer*/
   .padding{
-    padding: 20px;
+    padding: 0px 30px 0px 30px;
   }
   
   /* Debo crear filas que se vuelvan columnas  */
   .Container{
-    width:96%;
+    width:100%;
     margin:0 auto;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   /* Add a card effect for articles */
   .card {
     width:22em;
-    height:92vh;
+    height:105vh;
     margin-top: 50px;
-    border: 1px solid lightskyblue;
+ 
     box-shadow: 0 0 12px rgba(0,0,0, .2);
     overflow: hidden;
 
     background-color: rgba(39, 29, 99, 0.747);
-    padding: 0px 40px 30px 40px;
     border-radius:5px;
+  }
+
+  /* Propiedad hidden responsable de que img NO crezca demás*/
+  .box {
+    width: 100%;
+    height:min-content;
+    overflow: hidden;
   }
 
   /* Probando a editar imagen directamente*/
   img{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 100%;
-   border-radius: 1%;
+    padding: 0px;
+    display: block;
+    width: 100%;
+    border-radius: 1%;
+    transition: 0.4s;
   }
 
+  img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+   
   a:link{
     color:rgb(118, 189, 189);
   }
@@ -88,13 +104,14 @@
   
   /* Footer */
   .footer {
-    padding: 10px 40px 40px 40px;
+    padding: 10px 30px 10px 30px;
     text-align: center;
     background-color: rgba(39, 29, 99, 0.747);
-    margin-top: 100px;
+    margin-top: 80px;
   }
 
   .logo {
+    margin: auto;
     padding-top: 25px;
     width:fit-content;
     border-width:0;
