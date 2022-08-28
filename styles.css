@@ -72,15 +72,15 @@
   /* Propiedad hidden responsable de que img NO crezca demás*/
   .box {
     width: 100%;
-    height:min-content;
     overflow: hidden;
   }
 
-  /* Probando a editar imagen directamente*/
+  /* Ideal pic size so they don't weight a lot: 570/320 */
   img{
     padding: 0px;
     display: block;
     width: 100%;
+    max-height: 270px;
     border-radius: 1%;
     transition: 0.4s;
   }
