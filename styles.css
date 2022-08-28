@@ -11,7 +11,9 @@
     margin: 0px;
     background-image: url(./assets/back1.jpg);
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:100vw 100vh;
+    background-position-x: center;
+    background-position-y: bottom;
     background-attachment: fixed;
   }
 
@@ -20,7 +22,7 @@
       padding: 30px;
       font-size: 40px; 
       text-align: center;
-      background-color:rgba(39, 29, 99, 0.747);
+      background-color:#323169;
       background-size: cover;
     }
 
@@ -30,7 +32,7 @@
     margin:17px 0px 17px 0px;
   }
 
-  article,p,a {
+  article,p {
     font-family: sans-serif;
     font-size: medium;
     padding: 0px 20px 0px 20px;
@@ -65,7 +67,7 @@
     box-shadow: 0 0 12px rgba(0,0,0, .2);
     overflow: hidden;
 
-    background-color: rgba(39, 29, 99, 0.747);
+    background-color: #323169;
     border-radius:5px;
   }
 
@@ -92,6 +94,7 @@
    
   a:link{
     color:rgb(118, 189, 189);
+    text-decoration: none;
   }
 
   a:visited{
@@ -99,14 +102,14 @@
   }
 
   a:hover{
-    color:aqua;
+    color:rgb(51, 172, 172);
   }
   
   /* Footer */
   .footer {
     padding: 10px 30px 10px 30px;
     text-align: center;
-    background-color: rgba(39, 29, 99, 0.747);
+    background-color: #323169;
     margin-top: 80px;
   }
 
