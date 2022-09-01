@@ -5,7 +5,7 @@
   /* Add a background image */
   body {
   
-    font-size:large;
+    font-size: 100%;
     color:rgb(125, 230, 230);
     padding: 0px;
     margin: 0px;
@@ -18,26 +18,33 @@
   }
 
     /* Header/Blog Title */
-    .header {
-      padding: 30px;
-      font-size: 40px; 
-      text-align: center;
-      background-color:#323169;
-      background-size: cover;
-    }
+  .header {
+    font-family: 'Poppins';
+    font-size: larger;
+    padding: 30px;
+    font-size: 2em; 
+    text-align: center;
+    background-color:#323169;
+    background-size: cover;
+  }
 
-  h2,h3,h4, h5 {
+  h2,h3,h4,h5 {
+    font-size: 1.5em;
     font-family:'Poppins';
     padding: 0px 20px 0px 20px;
     margin:17px 0px 17px 0px;
   }
 
   article,p {
-    font-family: sans-serif;
-    font-size: medium;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size:1.2em;
     padding: 0px 20px 0px 20px;
     margin: 17px 0px 0px 0px;
 
+  }
+
+  .titles{
+    font-family: 'Alegreya', serif;
   }
   
 
@@ -67,7 +74,7 @@
     box-shadow: 0 0 12px rgba(0,0,0, .2);
     overflow: hidden;
 
-    background-color: #323169d8;
+    background-color: #323169;
     border-radius:5px;
   }
 
