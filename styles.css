@@ -6,7 +6,7 @@
   body {
   
     font-size: 100%;
-    color:rgb(125, 230, 230);
+    color:#abfaf0; /* #7de6e6 */
     padding: 0px;
     margin: 0px;
     background-image: url(./assets/back1.jpg);
@@ -21,12 +21,37 @@
   .header {
     font-family: 'Poppins';
     font-size: larger;
-    padding: 30px;
+    padding: 2px;
     font-size: 2em; 
     text-align: center;
     background-color:#323169;
     background-size: cover;
   }
+
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #323169;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: #7de6e6;
+    font-size: large;  
+    font-family:'Poppins';
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover {background-color: #bb356d;}
+  
+  
+  ul.topnav li.right {float: right;}
 
   h2,h3,h4,h5 {
     font-size: 1.5em;
@@ -51,26 +76,25 @@
 
   /* Con esto volvi a crear padding del resto, excepto header y footer*/
   .padding{
-    padding: 0px 30px 0px 30px;
+    padding: 0px 20px 0px 20px;
   }
   
   /* Debo crear filas que se vuelvan columnas  */
   .Container{
-    width:100%;
-    margin:0 auto;
+    width:96%;
+    margin:auto;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 50px;
   }
 
   /* Add a card effect for articles */
   .card {
     width:22em;
     height:105vh;
-    margin-top: 50px;
- 
+    margin: 25px 25px 25px 30px;
     box-shadow: 0 0 12px rgba(0,0,0, .2);
     overflow: hidden;
 
@@ -100,16 +124,16 @@
   }
    
   a:link{
-    color:rgb(118, 189, 189);
+    color:#76bdbd;
     text-decoration: none;
   }
 
   a:visited{
-    color: pink;
+    color: #33acac;
   }
 
   a:hover{
-    color:rgb(51, 172, 172);
+    color: #d34c84;
   }
   
   /* Footer */
@@ -133,6 +157,9 @@
       width: 100%;
       padding: 0;
     }
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    
   }
 
   /* Centrar div de manera horizontal y poner imagen de fondo dentro de div
