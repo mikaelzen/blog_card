@@ -10,11 +10,9 @@
     padding: 0px;
     margin: 0px;
     background-image: url(./assets/back1.jpg);
-    background-repeat:no-repeat;
-    background-size:100vw 100vh;
-    background-position-x: center;
-    background-position-y: bottom;
-    background-attachment: fixed;
+    background-repeat:repeat-y;
+    background-size:100vw;
+    background: cover;
   }
 
     /* Header/Blog Title */
@@ -24,7 +22,7 @@
     padding: 2px;
     font-size: 2em; 
     text-align: center;
-    background-color:#323169;
+    background-color:#2a2958;
     background-size: cover;
   }
 
@@ -33,14 +31,14 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #323169;
+    background-color: #2a2958;
   }
   
   ul.topnav li {float: left;}
   
   ul.topnav li a {
     display: block;
-    color: #7de6e6;
+    color: #5ddfdf;
     font-size: large;  
     font-family:'Poppins';
     text-align: center;
@@ -48,10 +46,13 @@
     text-decoration: none;
   }
   
-  ul.topnav li a:hover {background-color: #bb356d;}
+  ul.topnav li a:hover {background-color: #bb356d;
+    color:#2a2958;
+  }
   
   
-  ul.topnav li.right {float: right;}
+  ul.topnav li.right {float: right;
+  }
 
   h2,h3,h4,h5 {
     font-size: 1.5em;
@@ -62,7 +63,7 @@
 
   article,p {
     font-family: 'Quattrocento Sans', sans-serif;
-    font-size:1.2em;
+    font-size:1.3em;
     padding: 0px 20px 0px 20px;
     margin: 17px 0px 0px 0px;
 
@@ -74,31 +75,31 @@
   
 
 
-  /* Con esto volvi a crear padding del resto, excepto header y footer*/
+  /* Con esto volvi a crear padding, creo que puede ir en container  */
   .padding{
-    padding: 0px 20px 0px 20px;
-  }
+    padding: 50px 15px 0px 15px;
+    width: 100%;
+   
+  } 
   
   /* Debo crear filas que se vuelvan columnas  */
   .Container{
-    width:96%;
-    margin:auto;
+    width:100%;
+    margin: auto;
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
   }
 
   /* Add a card effect for articles */
   .card {
-    width:22em;
-    height:105vh;
-    margin: 25px 25px 25px 30px;
+    width:21rem;
+    height:37em;
+    margin: 25px 25px 25px 25px;
     box-shadow: 0 0 12px rgba(0,0,0, .2);
     overflow: hidden;
-
-    background-color: #323169;
+    background-color: #2a2958;
     border-radius:5px;
   }
 
@@ -129,7 +130,7 @@
   }
 
   a:visited{
-    color: #33acac;
+    color: #37c5cf;
   }
 
   a:hover{
@@ -152,7 +153,7 @@
   }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
