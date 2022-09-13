@@ -10,9 +10,14 @@
     padding: 0px;
     margin: 0px;
     background-image: url(./assets/back1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+
+    /* ANTERIOR 
     background-repeat:repeat-y;
     background-size:100vw;
-    background: cover;
+    background: cover;   */
   }
 
     /* Header/Blog Title */
@@ -139,7 +144,7 @@
   .footer {
     padding: 10px 30px 10px 30px;
     text-align: center;
-    background-color: #323169;
+    background-color: #2a2958;
     margin-top: 80px;
   }
 

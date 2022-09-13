@@ -11,9 +11,9 @@
     padding: 0px;
     margin: 0px;
     background-image: url(./assets/back1.jpg);
-    background-repeat:repeat-y;
-    background-size:100vw;
-    background: cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
   }
   
   /* Header/Blog Title */
@@ -59,33 +59,34 @@
     font-size: 1.5em;
     font-family:'Poppins';
     padding: 0px 20px 0px 20px;
-    margin:20px 20px 20px 20px;
+    margin:20px 50px 20px 50px;
   }
   
   h5 {
     font-size: 1.2em;
     font-family:'Quattrocento Sans', sans-serif;
-    margin: 5px 20px 20px 20px;
+    margin: 5px 50px 20px 50px;
   }
 
   article, p {
     font-family: 'Poppins';
     font-size:1.1em;
     padding: 0px ;
-    margin: 20px 20px 10px 20px;
+    margin: 20px 50px 20px 50px;
 
   }
 
+  
   .lista a {
     font-family: 'Poppins';
     font-size:1.1em;
-    margin: 20px 20px;
+    margin: 20px 50px;
   }
 
   .titles{
     font-family: 'Alegreya', serif;
     font-size: 2em;
-    margin: 20px 20px 0px 20px;
+    margin: 20px 50px 0px 50px;
   }
 
   /* Con esto volvi a crear padding del resto, excepto header y footer*/
@@ -160,7 +161,7 @@
  .footer {
   padding: 10px 30px 10px 30px;
   text-align: center;
-  background-color: #323169;
+  background-color: #2a2958;
   margin-top: 80px;
 }
 
