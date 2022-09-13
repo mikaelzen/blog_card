@@ -6,32 +6,86 @@
   /* Si quiero cambiar color de textos, o modificar paddings especificos, quitarlos de acá*/
   body {
   
-    font-size: larger;
-    color:rgb(125, 230, 230);
+    font-size: 100%;
+    color:#abfaf0;;
     padding: 0px;
     margin: 0px;
     background-image: url(./assets/back1.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-  }
-
-  h1,h2,h3,h4, h5 {
-    font-family:'Poppins';
-  }
-
-  article,p,a {
-    font-family: sans-serif;
-
+    background-repeat:repeat-y;
+    background-size:100vw;
+    background: cover;
   }
   
   /* Header/Blog Title */
   .header {
-    padding: 30px;
-    font-size: 40px; 
+    font-family: 'Poppins';
+    font-size: larger;
+    padding: 2px;
+    font-size: 2em; 
     text-align: center;
-    background-color:rgba(39, 29, 99, 0.747);
+    background-color:#2a2958;
     background-size: cover;
+  }
+
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2a2958;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: #5ddfdf;
+    font-size: large;  
+    font-family:'Poppins';
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover {background-color: #bb356d;
+    color:#2a2958;
+  }
+  
+  
+  ul.topnav li.right {float: right;
+  }
+
+  h2,h3,h4 {
+    font-size: 1.5em;
+    font-family:'Poppins';
+    padding: 0px 20px 0px 20px;
+    margin:20px 20px 20px 20px;
+  }
+  
+  h5 {
+    font-size: 1.2em;
+    font-family:'Quattrocento Sans', sans-serif;
+    margin: 5px 20px 20px 20px;
+  }
+
+  article, p {
+    font-family: 'Poppins';
+    font-size:1.1em;
+    padding: 0px ;
+    margin: 20px 20px 10px 20px;
+
+  }
+
+  .lista a {
+    font-family: 'Poppins';
+    font-size:1.1em;
+    margin: 20px 20px;
+  }
+
+  .titles{
+    font-family: 'Alegreya', serif;
+    font-size: 2em;
+    margin: 20px 20px 0px 20px;
   }
 
   /* Con esto volvi a crear padding del resto, excepto header y footer*/
@@ -54,34 +108,45 @@
     padding-left: 20px;
   }
   
+  /* Propiedad hidden responsable de que img NO crezca demás*/
+  .box {
+    width: 100%;
+    overflow: hidden;
+  }
 
   /* Probando a editar imagen directamente*/
   img{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 50%;
-   border-radius: 1%;
+    padding: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height:max-content;
+    
   }
 
   a:link{
-    color:rgb(118, 189, 189);
+    color:#76bdbd;
+    text-decoration: none;
   }
 
   a:visited{
-    color: pink;
+    color: #37c5cf;
   }
 
   a:hover{
-    color:aqua;
+    color: #d34c84;
   }
 
   /* Add a card effect for articles */
   .card {
-    background-color: rgba(39, 29, 99, 0.747);
-    padding: 10px 40px 30px 40px;
-    margin-top: 20px;
-    border-radius:1vw;
+    background-color: #2a2958;
+    margin: 25px 25px 25px 25px;
+    box-shadow: 0 0 12px rgba(0,0,0, .2);
+    overflow: hidden;
+    background-color: #2a2958;
+    border-radius:5px;
+    padding-bottom: 25px;
   }
   
   /* Clear floats after the columns */
@@ -91,13 +156,13 @@
     clear: both;
   }
   
-  /* Footer */
-  .footer {
-    padding: 10px 40px 40px 40px;
-    text-align: center;
-    background-color: rgba(39, 29, 99, 0.747);
-    margin-top: 180px;
-  }
+ /* Footer */
+ .footer {
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  background-color: #323169;
+  margin-top: 80px;
+}
 
   .logo {
     padding-top: 25px;
@@ -111,6 +176,9 @@
       width: 100%;
       padding: 0;
     }
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    
   }
 
   /* Centrar div de manera horizontal y poner imagen de fondo dentro de div
